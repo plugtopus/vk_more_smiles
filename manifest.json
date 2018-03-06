@@ -1,0 +1,25 @@
+{
+   "background": {
+      "scripts": [ "core/bg.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "core/cs.js" ],
+      "matches": [ "http://vk.com/*", "https://vk.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "__MSG_desc__",
+   "icons": {
+      "128": "img/128.png",
+      "48": "img/48.png",
+      "32": "img/32.png"
+   },
+   "default_locale": "ru",
+   "manifest_version": 2,
+   "name": "__MSG_name__",
+   "options_page": "html/options.html",
+   "permissions": [ "storage", "http://vk.com/*", "https://vk.com/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2018.03.06.2",
+   "author": "Plugtopus Agency",
+   "homepage_url": "https://plugtopus.agency"
+}
